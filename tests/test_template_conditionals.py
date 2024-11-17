@@ -109,9 +109,7 @@ def expected_tree(
     )
 
     return {
-        path.replace('/', os.sep)
-        for is_expected, path in expected_files
-        if is_expected
+        path.replace('/', os.sep) for is_expected, path in expected_files if is_expected
     }
 
 
